@@ -1,13 +1,40 @@
-{% load static%}
+{%load static%}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
     <title>Arcade-Games</title>
 </head>
 <body>
-    <h1>Bienvenido a nuestra página de juegos Arcade</h1>
+    <header class="header">
+        <div>
+            <nav> 
+                <ul>
+                    <img  class="img-log" src="{% static 'img/ico-arcade-game.png'%}" alt="ico arcade game">
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav> 
+                <ul>
+                    <h1 class="title">Retro<span class="title2"">Games</span></h1>
+                </ul>
+            </nav>
+        </div>
+        <div class="userlogin">
+            <nav> 
+                <ul>
+                    <img  class="imglogin" src="{% static 'img/icologin.png'%}" alt="ico login">
+                </ul>
+                <ul>
+                    <h1 class="user"> Usuario</h1>
+                </ul>
+            </nav>
+        </div>
+    </header>
 </body>
 </html>
+

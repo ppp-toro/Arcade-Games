@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Orbitron:wght@400;500;600&display=swap");
+
+body {
+  width: 95%;
+  height: 95%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5%;
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  height: 90%;
+  background-image: linear-gradient(
+    to right,
+    #1a87fc,
+    #2b91ff,
+    #63acfb,
+    #8dc3fc
+  );
+  background-size: 400% auto;
+  border-radius: 20px;
+  border: solid 0.8px rgb(0, 0, 0);
+  opacity: 0.85;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.565);
+  animation: moveGradient 5s linear infinite;
+}
+.img-log {
+  width: 35%;
+  border-radius: 40%;
+}
+.title,
+.title2 {
+  font-size: 50px;
+  font-family: "Orbitron", sans-serif;
+}
+.title {
+  color: rgb(22, 28, 16);
+  padding: 5%;
+  margin-right: -10%;
+  background: rgba(127, 125, 125, 0.854);
+  border-radius: 15px;
+  border: solid 0.8px rgb(0, 0, 0);
+  animation: moveBackground 5s linear infinite;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.5),
+    0 0 80px rgba(255, 255, 255, 0.3);
+}
+.title2 {
+  color: crimson;
+}
+.userlogin {
+  text-align: center;
+  transform: translateX(10%);
+}
+.imglogin {
+  width: 20%;
+}
+.user {
+  background: rgba(255, 255, 255, 0.667);
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 40px;
+  font-family: "Orbitron", sans-serif;
+  box-shadow: 2px 2px 10px rgb(249, 249, 249);
+}
+@keyframes moveGradient {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+@keyframes moveBackground {
+  0% {
+    transform: translateX(0);
+    box-shadow: 2px 2px 40px rgb(242, 255, 3);
+  }
+  40% {
+    transform: translateX(-50%);
+    box-shadow: 2px 2px 40px rgb(255, 0, 0);
+  }
+  50% {
+    transform: translateX(0);
+    box-shadow: 2px 2px 40px rgb(17, 255, 0);
+  }
+  90% {
+    transform: translateX(50%);
+    box-shadow: 2px 2px 40px rgb(0, 30, 255);
+  }
+  100% {
+    transform: translateX(0);
+    box-shadow: 2px 2px 40px rgb(255, 0, 225);
+  }
+}
