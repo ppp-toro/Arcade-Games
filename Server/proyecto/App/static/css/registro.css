@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Orbitron:wght@400;500;600&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: animateG 2.5s;
+  overflow: hidden;
+}
+
+#background-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  z-index: -1;
+}
+
+@keyframes animateG {
+  0% {
+    margin-top: -3000px;
+    opacity: 0;
+  }
+
+  80% {
+    margin-top: -3000px;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.formulario {
+  width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8e0;
+  border-radius: 15px;
+  box-shadow: 2px 2px 40px rgb(3, 255, 3);
+}
+
+input {
+  background-color: #f8f8f8c1;
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+textarea {
+  background-color: #f8f8f8c1;
+  width: 100%;
+  height: 130%;
+  margin-top: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50;
+  width: 40%;
+  color: white;
+  cursor: pointer;
+  margin-left: 28%;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2085eb;
+}
+
+.title {
+  font-size: 30 px;
+  font-family: "Orbitron", sans-serif;
+  color: rgb(22, 28, 16);
+  padding: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  background: rgba(127, 125, 125, 0.854);
+  border-radius: 15px;
+  border: solid 0.8px rgb(0, 0, 0);
+  animation: moveBackground 5s linear infinite;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.5),
+    0 0 80px rgba(255, 255, 255, 0.3);
+
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+.title2 {
+  color: crimson;
+}
+
+.form1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 80px 80px;
+  grid-column-gap: 5%;
+  grid-template-areas: 'nombre imagen'
+    'apellidos descripcion'
+    'gmail blank';
+  justify-content: center;
+  align-items: center;
+}
+
+#nombre {
+  grid-area: nombre;
+}
+
+#imagen {
+  grid-area: imagen;
+}
+
+#apellidos {
+  margin-top: -19%;
+  grid-area: apellidos;
+}
+
+#descripcion {
+  margin-top: 2%;
+  grid-area: descripcion;
+}
+
+#gmail {
+  margin-top: -35%;
+  grid-area: gmail;
+}
+
+#blank {
+  grid-area: blank;
+}
+
+
+.form2 {
+  margin-top: -9%;
+  width: 47.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form3 {
+  margin-top: -10%;
+  margin-left: 15px;
+  width: 47.5%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.form23 {
+  display: flex;
+  flex-direction: row;
+  font-family: "Orbitron", sans-serif;
+}
+
+.terminos1,
+.terminos2 {
+  width: 10%;
+  white-space: nowrap;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1.1px;
+}
+
+.texterm {
+  margin-left: -47%;
+}

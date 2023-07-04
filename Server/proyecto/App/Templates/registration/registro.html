@@ -1,13 +1,57 @@
 {%load static%}
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{%static 'css/registro.css'%}">
+    <script src="{%static 'js/registro.js'%}"></script>
     <title>RetroGames</title>
 </head>
+
 <body>
-    
+    <img src="{%static 'img/arcade-club.jpg'%}" alt="Fondo Pantalla" id="background-img">
+    <div class="formulario">
+
+        <form method="post" action="{% url 'create_user' %}">
+            <h1 class="title">Retro<span class="title2"">Games</span></h1>
+       
+        <div class=" form1">
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+            <input type="file" id="imagen" name="imagen" accept="image/*" required>
+            <input type="text" id="apellidos" name="apellidos" required placeholder="Apellidos">
+            <input type="email" id="gmail" name="gmail" required placeholder="Correo Electrónico">
+            <textarea id="descripcion" name="descripcion" rows="4" cols="30" maxlength="50"
+                placeholder="Descripción" required></textarea>
+    </div>
+    <div class="form23">
+        <div class="form2">
+            <input type="text" id="usuario" name="usuario" required placeholder="Nombre de Usuario">
+            <input type="password" id="contrasena" name="contrasena" required placeholder="Contraseña">
+            <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required
+                placeholder="Verifica la contraseña">
+        </div>
+
+        <div class="form3">
+            <label>⟸ Como te verán tus amigos!</label>
+            <div class="terminos1">
+                <input type="checkbox" name="checkyeard" class="checkyeard" required>
+                <label class="texterm">Términos de privacidad</label>
+            </div>
+            <div class="terminos2">
+                <input type="checkbox" name="checkyeard" class="checkyeard">
+                <label class="texterm">Alertas novedades Gmail</label>
+            </div>
+        </div>
+    </div>
+    <small class="verfpaswd"></small>
+    <div>
+        <input type="submit" class="btnregistro" value="Registrarse">
+    </div>
+    </form>
+    </div>
 </body>
+
 </html>
